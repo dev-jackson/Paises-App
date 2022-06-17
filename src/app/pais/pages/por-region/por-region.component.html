@@ -1,0 +1,30 @@
+<h2>Por region</h2>
+<hr>
+
+<div class="row">
+  <div class="col">
+    <div class="btn-group">
+      <input type="radio" class="btn-check" name="region" id="region" value="">
+      <label class="btn btn-outline-primary" for="">Europa</label>
+
+      <input type="radio" class="btn-check" name="region" id="region" value="">
+      <label class="btn btn-outline-primary" for="">Asia</label>
+
+      <input type="radio" class="btn-check" name="region" id="region" value="">
+      <label class="btn btn-outline-primary" for="">Africa</label>
+
+      <input type="radio" class="btn-check" name="region" id="region" value="">
+      <label class="btn btn-outline-primary" for="">Americas</label>
+
+      <input type="radio" class="btn-check" name="region" id="region" value="">
+      <label class="btn btn-outline-primary" for="">Oceania</label>
+    </div>
+  </div>
+</div>
+<hr>
+
+<div *ngIf="countries.length != 0;" class="row">
+  <div class="col">
+    <app-pais-table [countries]="countries"></app-pais-table>
+  </div>
+</div>
